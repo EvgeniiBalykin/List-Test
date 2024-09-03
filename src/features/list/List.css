@@ -1,0 +1,38 @@
+.btn-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.list-wrapper {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.list-item-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.list-item-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.list-item-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.list-item-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.shift-right {
+  transition: transform 0.7s ease;
+}
